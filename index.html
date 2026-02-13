@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Hello Company</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header class="flex justify-between items-center p-4">
+        <div class="logo"></div>
+
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <main>
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our services and offerings.</p>
+        </section>
+
+        <hr />
+
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">About Hello Company</h2>
+            <p class="mt-2">Hello Company is dedicated to providing top-notch services in various domains.</p>
+        </section>
+
+        <hr />
+
+        <section id="portfolio-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold">Our Portfolio</h2>
+            <p class="mt-2">Take a look at our diverse range of projects that showcase our skills and expertise.</p>
+        </section>
+
+        <hr />
+
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+            </header>
+
+            <div class="flex gap-10 mt-8">
+
+                <form class="w-1/2 space-y-4">
+                    <div>
+                        <label class="block mb-1">Nama</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded" required>
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Tanggal Lahir</label>
+                        <input type="date" id="birthdate" class="w-full p-2 border rounded" required>
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Jenis Kelamin</label>
+                        <div class="flex gap-4">
+                            <label>
+                                <input type="radio" name="gender" value="Laki-Laki" required>
+                                Laki-Laki
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="Perempuan">
+                                Perempuan
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block mb-1">Pesan</label>
+                        <textarea id="message" rows="4" class="w-full p-2 border rounded" required></textarea>
+                    </div>
+
+                    <button type="button"
+                        onclick="submitForm()"
+                        class="w-full bg-black text-white py-2 rounded">
+                        Submit
+                    </button>
+                </form>
+
+                <div id="output" class="w-1/2 border p-5">
+                    <p><strong>Current time:</strong> -</p>
+                    <p><strong>Nama:</strong> -</p>
+                    <p><strong>Tanggal Lahir:</strong> -</p>
+                    <p><strong>Jenis Kelamin:</strong> -</p>
+                    <p><strong>Pesan:</strong> -</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr />
+        <p class="text-center p-4">© 2026 Hello Company. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
